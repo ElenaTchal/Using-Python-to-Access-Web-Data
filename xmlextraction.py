@@ -14,7 +14,7 @@ while True:
     if len(address) < 1: break
 
     uh = urllib.request.urlopen(address, context=ctx)
-    data = uh.read()
+    data = uh.read().decode()
     tree = ET.fromstring(data)
     counts = tree.findall('.//count')
     counts_strings = [count.text for count in counts]
