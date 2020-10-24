@@ -1,3 +1,5 @@
+# There is something off somewhere between lines 16 and 20. It outputs the answer but prints for infinity or until program termination and I can't figure out why.
+
 import urllib.request, urllib.error
 import xml.etree.ElementTree as ET
 import ssl
